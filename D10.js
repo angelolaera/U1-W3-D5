@@ -484,10 +484,26 @@ stampaTestoTd();
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+function backgroundRed() {
+  const links = document.querySelectorAll("a");
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].style.backgroundColor = "red";
+  }
+}
+backgroundRed();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
+
+function aggiungiElemento() {
+  const nuovoOggetto = document.createElement("li");
+  nuovoOggetto.textContent = "Scrivici qualcosa";
+  const unOrderedList = document.getElementById("myList");
+  unOrderedList.appendChild(nuovoOggetto);
+}
+aggiungiElemento();
 
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
