@@ -471,6 +471,16 @@ console.log(selectTdElements());
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+function stampaTestoTd() {
+  const elementiTd = document.querySelectorAll("td");
+
+  for (let i = 0; i < elementiTd.length; i++) {
+    const testo = elementiTd[i].textContent;
+    console.log(testo);
+  }
+}
+stampaTestoTd();
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
